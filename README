@@ -1,0 +1,77 @@
+Java Arduino Prototyping API (version: 0.1) **tested only on windows**
+=====================================================
+
+The Java Arduino Prototyping API helps you to quickly prototype Arduino programs, 
+without having to repeatedly load the program to the Arduino board.
+
+Setup:
+1.) Load prototype.pde onto your Arduino dev board.
+2.) Read instructions on how to compile and run Java programs on the Arduino wiki here:
+	http://www.arduino.cc/playground/Interfacing/Java
+3.) Copy the "com" dir to the "libs" dir in your Arduino IDE's directory.
+4.) Import the arduino pkg in your java program.
+
+-----------------------------------------------------
+METHODS:
+-----------------------------------------------------
+
+Arduino.output(list_of_output_pins)
+
+Digital I/O functions:
+1.) Arduino.setHigh(pin_number)
+2.) Arduino.setLow(pin_number)
+3.) Arduino.getState(pin_number)
+    getState() returns true if pin state is high, else it returns false.
+
+Analog I/O functions (currently not supported):
+1.) Arduino.analogRead(pin_number)
+    returns the analog value
+2.) Arduino.analogRead(pin_number, value)
+    sets the analog value
+
+Misc functions (currently not supported):
+1.) Arduino.turnOff()
+    sets all the pins to low state
+2.) Arduino.close()
+    closes serial connection. Using this makes sure that you won't have
+    to disconnect & reconnect the Arduino again to recover the serial port.
+
+-----------------------------------------------------
+USAGE EXAMPLE:
+-----------------------------------------------------
+
+#import the lib
+import com.singalong.arduino.Arduino;
+
+public class TestMyArduino {
+
+    
+	public static void main(String[] args) throws Exception{
+        
+	/***
+		you have to have your code in an exceptions block.
+		to know more about this,
+		read the Arduino wiki page on Interfacing with Java
+		which is linked to above in this readme
+        ***/
+       
+	//the port on which the arduino is connected to is set via your Arduino IDE.
+	Arduino my_board = Arduino()
+        
+	int i =0;
+        int[] pins = {13};
+	
+	//declare output pins        
+	my_board.output(pins);
+     
+	//set digital high        
+	my_board.setHigh(13);
+
+	//get digital state
+        my_board.getState(13);
+	
+	//set digital low
+	my_board.setLow(13);	
+
+	}
+}
