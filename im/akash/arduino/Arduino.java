@@ -1,4 +1,4 @@
-package com.singalong.arduino;
+package im.akash.arduino;
 
 import gnu.io.CommPortIdentifier;
 import gnu.io.SerialPort;

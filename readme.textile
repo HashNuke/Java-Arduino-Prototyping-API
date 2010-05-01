@@ -11,8 +11,7 @@ without having to repeatedly load the program to the Arduino board.
 4.) Import the arduino pkg in your java program.
 
 -----------------------------------------------------
-METHODS:
------------------------------------------------------
+h2. Methods
 
 Arduino.output(list_of_output_pins)
 
@@ -36,10 +35,10 @@ Misc functions (currently not supported):
     to disconnect & reconnect the Arduino again to recover the serial port.
 
 -----------------------------------------------------
-USAGE EXAMPLE:
------------------------------------------------------
+h2. Usage example
 
-#import the lib
+
+//import the lib
 import im.akash.arduino.Arduino;
 
 public class TestMyArduino {
