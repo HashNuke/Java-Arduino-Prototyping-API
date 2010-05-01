@@ -35,17 +35,16 @@ Misc functions (currently not supported):
     to disconnect & reconnect the Arduino again to recover the serial port.
 
 -----------------------------------------------------
-h2. Usage example
+h2. Example usage
 
 
 
-bc. //import the lib
+//import the lib
 import im.akash.arduino.Arduino;
 
 public class TestMyArduino {
-
-    
-	public static void main(String[] args) throws Exception{
+  
+  public static void main(String[] args) throws Exception{
         
 	/***
 		you have to have your code in an exceptions block.
