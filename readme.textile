@@ -1,14 +1,13 @@
-Java Arduino Prototyping API (version: 0.1) **tested only on windows**
-=====================================================
+h1. Java Arduino Prototyping API (version: 0.1, windows-only)
 
 The Java Arduino Prototyping API helps you to quickly prototype Arduino programs, 
 without having to repeatedly load the program to the Arduino board.
 
-Setup:
+*Setup:*
 1.) Load prototype.pde onto your Arduino dev board.
 2.) Read instructions on how to compile and run Java programs on the Arduino wiki here:
-	http://www.arduino.cc/playground/Interfacing/Java
-3.) Copy the "com" dir to the "libs" dir in your Arduino IDE's directory.
+	"http://www.arduino.cc/playground/Interfacing/Java":http://www.arduino.cc/playground/Interfacing/Java
+3.) Copy the "im" dir to the "libs" dir in your Arduino IDE's directory.
 4.) Import the arduino pkg in your java program.
 
 -----------------------------------------------------
