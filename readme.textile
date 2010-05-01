@@ -16,21 +16,21 @@ h2. Methods
 Arduino.output(list_of_output_pins)
 
 Digital I/O functions:
-1.) Arduino.setHigh(pin_number)
-2.) Arduino.setLow(pin_number)
-3.) Arduino.getState(pin_number)
-    getState() returns true if pin state is high, else it returns false.
+1.) @Arduino.setHigh(pin_number)@
+2.) @Arduino.setLow(pin_number)@
+3.) @Arduino.getState(pin_number)@
+    @getState()@ returns true if pin state is high, else it returns false.
 
 Analog I/O functions (currently not supported):
-1.) Arduino.analogRead(pin_number)
+1.) @Arduino.analogRead(pin_number)@
     returns the analog value
-2.) Arduino.analogRead(pin_number, value)
+2.) @Arduino.analogRead(pin_number, value)@
     sets the analog value
 
 Misc functions (currently not supported):
-1.) Arduino.turnOff()
+1.) @Arduino.turnOff()@
     sets all the pins to low state
-2.) Arduino.close()
+2.) @Arduino.close()@
     closes serial connection. Using this makes sure that you won't have
     to disconnect & reconnect the Arduino again to recover the serial port.
 
@@ -38,7 +38,8 @@ Misc functions (currently not supported):
 h2. Usage example
 
 
-//import the lib
+
+bc. //import the lib
 import im.akash.arduino.Arduino;
 
 public class TestMyArduino {
