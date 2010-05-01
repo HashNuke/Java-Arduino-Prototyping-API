@@ -41,7 +41,7 @@ USAGE EXAMPLE:
 -----------------------------------------------------
 
 #import the lib
-import com.singalong.arduino.Arduino;
+import im.akash.arduino.Arduino;
 
 public class TestMyArduino {
 
